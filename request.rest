@@ -1,0 +1,154 @@
+GET http://localhost:5000/tinjauan
+
+###
+GET http://localhost:5000/tinjauan/1
+
+###
+POST http://localhost:5000/tinjauan
+Content-Type:  application/json
+
+{
+    "nama": "anonymous",
+    "layanan": "Edukasi",
+    "rating": 5,
+    "tinjauan": "Edukasi sangat membantu!"
+}
+
+###
+PATCH http://localhost:5000/tinjauan/2
+Content-Type:  application/json
+
+{
+    "nama": "tiara updated",
+    "layanan": "Konsultasi AI",
+    "rating": 5,
+    "tinjauan": "Konsultasi AI keren"
+}
+
+###
+DELETE http://localhost:5000/tinjauan/5
+
+###
+//USERS
+GET http://localhost:5000/users
+
+###
+GET http://localhost:5000/users/count
+
+###
+GET http://localhost:5000/users/2
+
+###
+POST http://localhost:5000/users
+Content-Type:  application/json
+
+{
+    "nama": "tiara 1",
+    "email": "tiara@gmail.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "admin"
+}
+
+###
+PATCH http://localhost:5000/users/1
+Content-Type:  application/json
+
+{
+    "nama": "admin UPDATED ",
+    "email": "admin@gmail.com",
+    "password": "123456",
+    "confPassword": "123456",
+    "role": "admin"
+}
+
+###
+DELETE http://localhost:5000/users/2
+
+//LOGIN
+###
+POST https://project-mental-health-api.vercel.app/login
+Content-Type: application/json
+
+{
+    "email": "tiara@gmail.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:5000/me
+
+//LOGOUT
+###
+DELETE http://localhost:5000/logout
+
+###
+//EDUKASI
+GET http://localhost:5000/edukasi
+
+###
+GET http://localhost:5000/edukasi/2
+
+###
+POST http://localhost:5000/edukasi
+Content-Type:  application/json
+
+{
+    "konten": "https://youtu.be/5Y76XIgwVyI?si=OnoaWp47u1OxUqN8"
+}
+
+###
+PATCH http://localhost:5000/edukasi/1
+Content-Type:  application/json
+
+{
+    "konten": "https://www.youtube.com/watch?v=CH0C5-8vbdY updated"
+
+}
+
+###
+DELETE http://localhost:5000/edukasi/2
+
+###
+//JANJI
+GET http://localhost:5000/janji
+
+###
+GET http://localhost:5000/janji/2
+
+###
+POST http://localhost:5000/janji
+Content-Type:  application/json
+
+{
+    "nama": "tiara",
+    "email": "tiara@gmail.com",
+    "no_telp": "08272736722",
+    "domisili": "jakarta",
+    "kategori_pengguna": "pasien",
+    "tanggal": "12 okrober 2025",
+    "jenis_konsultasi": "Zoom",
+    "alasan_konsultasi": "Stress kerja"
+}
+
+###
+PATCH http://localhost:5000/janji/1
+Content-Type:  application/json
+
+{
+    "nama": "tiara updated",
+    "email": "tiara@gmail.com",
+    "no_telp": "08272736722",
+    "domisili": "jakarta",
+    "kategori_pengguna": "pasien",
+    "tanggal": "12 okrober 2025",
+    "jenis_konsultasi": "Zoom",
+    "alasan_konsultasi": "Stress kerja"
+
+}
+
+###
+DELETE http://localhost:5000/janji/1
+
+
+

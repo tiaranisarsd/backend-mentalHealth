@@ -1,0 +1,66 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Tinjauan {
+  id Int @id @default(autoincrement())
+  nama String
+  layanan String
+  rating Int
+  tinjauan String @default("")
+  createdAt DateTime @default(now())
+}
+
+model Users {
+  id Int @id @default(autoincrement())
+  nama String
+  email String
+  password String
+  role String
+  createdAt DateTime @default(now())
+  edukasi Edukasi[]
+
+  Session Session[]
+}
+
+model Edukasi {
+  id Int @id @default(autoincrement())
+  userId Int
+  konten String
+  createdAt DateTime @default(now())
+  user Users @relation(fields: [userId], references: [id])
+}
+
+model Janji {
+  id Int @id @default(autoincrement())
+  nama String
+  email String
+  no_telp String
+  domisili String
+  kategori_pengguna String
+  tanggal String
+  jenis_konsultasi String
+  alasan_konsultasi String
+}
+
+model Session {
+  id        String   @id @default(cuid()) 
+  sid       String   @unique @map("session_id") 
+  expiresAt DateTime
+  data      Json
+  userId    Int
+  user Users @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([expiresAt])
+}
