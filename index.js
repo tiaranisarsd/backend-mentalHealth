@@ -36,6 +36,7 @@ app.use(AuthRoute);
 app.use(EdukasiRoute);
 app.use(JanjiRoute);
 
+
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
     console.log(`Server berjalan di port ${port}`);
@@ -43,4 +44,10 @@ app.listen(port, () => {
 
 export default app; // Ekspor aplikasi untuk digunakan di Vercel atau tempat lain
 
-module.exports.handler = serverless(app);
+export const handler = async (event, context) => { //gunakan ini
+    const server = serverless(app);
+    return await server(event, context);
+  };
+  
+
+
