@@ -13,6 +13,10 @@ dotenv.config();
 
 const app = express();
 
+app.get('/', (req, res) => {
+    res.send('Backend Berjalan!');
+  });
+
 // Konfigurasi CORS yang lebih baik
 const corsOptions = {
     origin: 3000, // Ganti dengan origin frontend Anda
