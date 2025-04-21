@@ -1,10 +1,10 @@
-GET https://backendmentalhealth-orpin.vercel.app/tinjauan
+GET https://backend-mentalhealth-hcpv3j4iw.vercel.app/tinjauan
 
 ###
-GET https://backendmentalhealth-orpin.vercel.app/tinjauan/1
+GET https://backend-mentalhealth-hcpv3j4iw.vercel.app/tinjauan/1
 
 ###
-POST https://backendmentalhealth-orpin.vercel.app/tinjauan
+POST https://backend-mentalhealth-hcpv3j4iw.vercel.app/tinjauan
 Content-Type:  application/json
 
 {
@@ -15,7 +15,7 @@ Content-Type:  application/json
 }
 
 ###
-PATCH https://backendmentalhealth-orpin.vercel.app/tinjauan/2
+PATCH https://backend-mentalhealth-hcpv3j4iw.vercel.app/tinjauan/2
 Content-Type:  application/json
 
 {
@@ -26,20 +26,20 @@ Content-Type:  application/json
 }
 
 ###
-DELETE https://backendmentalhealth-orpin.vercel.app/tinjauan/5
+DELETE https://backend-mentalhealth-hcpv3j4iw.vercel.app/tinjauan/5
 
 ###
 //USERS
-GET https://backendmentalhealth-orpin.vercel.app/users
+GET https://backend-mentalhealth-hcpv3j4iw.vercel.app/users
 
 ###
-GET https://backendmentalhealth-orpin.vercel.app/users/count
+GET https://backend-mentalhealth-hcpv3j4iw.vercel.app/users/count
 
 ###
-GET https://backendmentalhealth-orpin.vercel.app/users/2
+GET https://backend-mentalhealth-hcpv3j4iw.vercel.app/users/2
 
 ###
-POST https://backendmentalhealth-orpin.vercel.app/users
+POST https://backend-mentalhealth-hcpv3j4iw.vercel.app/users
 Content-Type:  application/json
 
 {
@@ -51,7 +51,7 @@ Content-Type:  application/json
 }
 
 ###
-PATCH https://backendmentalhealth-orpin.vercel.app/users/1
+PATCH https://backend-mentalhealth-hcpv3j4iw.vercel.app/users/1
 Content-Type:  application/json
 
 {
@@ -63,7 +63,7 @@ Content-Type:  application/json
 }
 
 ###
-DELETE https://backendmentalhealth-orpin.vercel.app/users/2
+DELETE https://backend-mentalhealth-hcpv3j4iw.vercel.app/users/2
 
 //LOGIN
 ###
@@ -76,21 +76,21 @@ Content-Type: application/json
 }
 
 ###
-GET https://backendmentalhealth-orpin.vercel.app/me
+GET https://backend-mentalhealth-hcpv3j4iw.vercel.app/me
 
 //LOGOUT
 ###
-DELETE https://backendmentalhealth-orpin.vercel.app/logout
+DELETE https://backend-mentalhealth-hcpv3j4iw.vercel.app/logout
 
 ###
 //EDUKASI
-GET https://backendmentalhealth-orpin.vercel.app/edukasi
+GET https://backend-mentalhealth-hcpv3j4iw.vercel.app/edukasi
 
 ###
-GET https://backendmentalhealth-orpin.vercel.app/edukasi/2
+GET https://backend-mentalhealth-hcpv3j4iw.vercel.app/edukasi/2
 
 ###
-POST https://backendmentalhealth-orpin.vercel.app/edukasi
+POST https://backend-mentalhealth-hcpv3j4iw.vercel.app/edukasi
 Content-Type:  application/json
 
 {
@@ -98,7 +98,7 @@ Content-Type:  application/json
 }
 
 ###
-PATCH https://backendmentalhealth-orpin.vercel.app/edukasi/1
+PATCH https://backend-mentalhealth-hcpv3j4iw.vercel.app/edukasi/1
 Content-Type:  application/json
 
 {
@@ -107,17 +107,17 @@ Content-Type:  application/json
 }
 
 ###
-DELETE https://backendmentalhealth-orpin.vercel.app/edukasi/2
+DELETE https://backend-mentalhealth-hcpv3j4iw.vercel.app/edukasi/2
 
 ###
 //JANJI
-GET https://backendmentalhealth-orpin.vercel.app/janji
+GET https://backend-mentalhealth-hcpv3j4iw.vercel.app/janji
 
 ###
-GET https://backendmentalhealth-orpin.vercel.app/janji/2
+GET https://backend-mentalhealth-hcpv3j4iw.vercel.app/janji/2
 
 ###
-POST https://backendmentalhealth-orpin.vercel.app/janji
+POST https://backend-mentalhealth-hcpv3j4iw.vercel.app/janji
 Content-Type:  application/json
 
 {
@@ -132,7 +132,7 @@ Content-Type:  application/json
 }
 
 ###
-PATCH https://backendmentalhealth-orpin.vercel.app/janji/1
+PATCH https://backend-mentalhealth-hcpv3j4iw.vercel.app/janji/1
 Content-Type:  application/json
 
 {
@@ -148,7 +148,7 @@ Content-Type:  application/json
 }
 
 ###
-DELETE https://backendmentalhealth-orpin.vercel.app/janji/1
+DELETE https://backend-mentalhealth-hcpv3j4iw.vercel.app/janji/1
 
 
 
