@@ -8,6 +8,7 @@ import UsersRoute from "./routes/UsersRoute.js";
 import AuthRoute from "./routes/AuthRoute.js";
 import EdukasiRoute from "./routes/EdukasiRoute.js";
 import JanjiRoute from "./routes/JanjiRoute.js";
+import serverless from 'serverless-http';
 
 dotenv.config();
 
@@ -24,7 +25,7 @@ app.get('/', (req, res) => {
       origin: netlifyUrl ? [netlifyUrl, 'http://localhost:3000'] : 'http://localhost:3000', // Gunakan URL Netlify jika ada, jika tidak, gunakan localhost
       credentials: true,
   };
-  
+
 app.use(cors(corsOptions));
 app.use(express.json());
 
@@ -41,3 +42,5 @@ app.listen(port, () => {
 });
 
 export default app; // Ekspor aplikasi untuk digunakan di Vercel atau tempat lain
+
+module.exports.handler = serverless(app);
