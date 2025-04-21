@@ -1,10 +1,10 @@
-GET http://localhost:5000/tinjauan
+GET https://backendmentalhealth-orpin.vercel.app/tinjauan
 
 ###
-GET http://localhost:5000/tinjauan/1
+GET https://backendmentalhealth-orpin.vercel.app/tinjauan/1
 
 ###
-POST http://localhost:5000/tinjauan
+POST https://backendmentalhealth-orpin.vercel.app/tinjauan
 Content-Type:  application/json
 
 {
@@ -15,7 +15,7 @@ Content-Type:  application/json
 }
 
 ###
-PATCH http://localhost:5000/tinjauan/2
+PATCH https://backendmentalhealth-orpin.vercel.app/tinjauan/2
 Content-Type:  application/json
 
 {
@@ -26,20 +26,20 @@ Content-Type:  application/json
 }
 
 ###
-DELETE http://localhost:5000/tinjauan/5
+DELETE https://backendmentalhealth-orpin.vercel.app/tinjauan/5
 
 ###
 //USERS
-GET http://localhost:5000/users
+GET https://backendmentalhealth-orpin.vercel.app/users
 
 ###
-GET http://localhost:5000/users/count
+GET https://backendmentalhealth-orpin.vercel.app/users/count
 
 ###
-GET http://localhost:5000/users/2
+GET https://backendmentalhealth-orpin.vercel.app/users/2
 
 ###
-POST http://localhost:5000/users
+POST https://backendmentalhealth-orpin.vercel.app/users
 Content-Type:  application/json
 
 {
@@ -51,7 +51,7 @@ Content-Type:  application/json
 }
 
 ###
-PATCH http://localhost:5000/users/1
+PATCH https://backendmentalhealth-orpin.vercel.app/users/1
 Content-Type:  application/json
 
 {
@@ -63,7 +63,7 @@ Content-Type:  application/json
 }
 
 ###
-DELETE http://localhost:5000/users/2
+DELETE https://backendmentalhealth-orpin.vercel.app/users/2
 
 //LOGIN
 ###
@@ -76,21 +76,21 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:5000/me
+GET https://backendmentalhealth-orpin.vercel.app/me
 
 //LOGOUT
 ###
-DELETE http://localhost:5000/logout
+DELETE https://backendmentalhealth-orpin.vercel.app/logout
 
 ###
 //EDUKASI
-GET http://localhost:5000/edukasi
+GET https://backendmentalhealth-orpin.vercel.app/edukasi
 
 ###
-GET http://localhost:5000/edukasi/2
+GET https://backendmentalhealth-orpin.vercel.app/edukasi/2
 
 ###
-POST http://localhost:5000/edukasi
+POST https://backendmentalhealth-orpin.vercel.app/edukasi
 Content-Type:  application/json
 
 {
@@ -98,7 +98,7 @@ Content-Type:  application/json
 }
 
 ###
-PATCH http://localhost:5000/edukasi/1
+PATCH https://backendmentalhealth-orpin.vercel.app/edukasi/1
 Content-Type:  application/json
 
 {
@@ -107,17 +107,17 @@ Content-Type:  application/json
 }
 
 ###
-DELETE http://localhost:5000/edukasi/2
+DELETE https://backendmentalhealth-orpin.vercel.app/edukasi/2
 
 ###
 //JANJI
-GET http://localhost:5000/janji
+GET https://backendmentalhealth-orpin.vercel.app/janji
 
 ###
-GET http://localhost:5000/janji/2
+GET https://backendmentalhealth-orpin.vercel.app/janji/2
 
 ###
-POST http://localhost:5000/janji
+POST https://backendmentalhealth-orpin.vercel.app/janji
 Content-Type:  application/json
 
 {
@@ -132,7 +132,7 @@ Content-Type:  application/json
 }
 
 ###
-PATCH http://localhost:5000/janji/1
+PATCH https://backendmentalhealth-orpin.vercel.app/janji/1
 Content-Type:  application/json
 
 {
@@ -148,7 +148,7 @@ Content-Type:  application/json
 }
 
 ###
-DELETE http://localhost:5000/janji/1
+DELETE https://backendmentalhealth-orpin.vercel.app/janji/1
 
 
 

@@ -17,11 +17,14 @@ app.get('/', (req, res) => {
     res.send('Backend Berjalan!');
   });
 
-// Konfigurasi CORS yang lebih baik
-const corsOptions = {
-    origin: 3000, // Ganti dengan origin frontend Anda
-    credentials: true,
-};
+  const netlifyUrl = process.env.NETLIFY_URL;
+
+  // Konfigurasi CORS yang lebih baik
+  const corsOptions = {
+      origin: netlifyUrl ? [netlifyUrl, 'http://localhost:3000'] : 'http://localhost:3000', // Gunakan URL Netlify jika ada, jika tidak, gunakan localhost
+      credentials: true,
+  };
+  
 app.use(cors(corsOptions));
 app.use(express.json());
 
